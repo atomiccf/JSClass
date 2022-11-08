@@ -39,19 +39,21 @@ function getAge(){
 
 function getGender(){
      let getGender =  confirm("Вы мужчина?");
-    return getGender
+     return getGender === true;
+
+
 
 
 }
 
 function setGender(){
 
-    let currentGender;
+
     if (gender) {
-         return currentGender = "мужской";
+         return  "мужской";
 
     } else {
-        return currentGender = "женский";
+        return  "женский";
 
     }
 
@@ -60,12 +62,12 @@ function setGender(){
 }
 
 function checkRetire(){
-    let retire;
+
     if (gender && age >= 65 || gender === false && age >= 58) {
-        return retire = "да";
+        return  "да";
 
     } else {
-        return retire = "нет";
+        return  "нет";
     }
 
 
