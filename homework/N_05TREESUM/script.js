@@ -25,7 +25,7 @@ function treeSumloop(arr) {
        for (const item of arr) {
            if (Array.isArray(item) ){
                 for (const subItem of item){
-                    if (subItem === []){
+                    if (subItem === [] && subItem.length === 0){
                         continue;
 
                     }
