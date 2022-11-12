@@ -2,7 +2,7 @@ let x = null;
 
 let y = null;
 
-let sign = "";
+let sign;
 
 function getNumber (num) {
 
@@ -31,20 +31,21 @@ sign = str;
 function getResult(){
 switch(sign){
 case '+':
-    console.log(x+y)
+    document.getElementById("calc_output").innerHTML = x+y;
     break;
 
 case '-':
-    console.log(x-y)
+    document.getElementById("calc_output").innerHTML = x-y;
     break;
 
 
     case '*':
-        console.log(x*y)
+        document.getElementById("calc_output").innerHTML = x*y
+
         break;
 
-        case '/':    
-        console.log(x/y)
+        case '/':
+            document.getElementById("calc_output").innerHTML = x/y
         break;
 
 
