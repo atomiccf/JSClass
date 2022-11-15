@@ -30,7 +30,7 @@
   background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 320px) {
   .calc_container {
     width: 100%;
     margin: 0 auto;
