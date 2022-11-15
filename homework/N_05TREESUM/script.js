@@ -1,59 +1,21 @@
-let arr = [5, 7,
+const arr = [5, 7,
     [4, [2], 8, [1, 3], 2],
     [9, []],
     1, 8];
 
-function treeSum(arr) {
 
-    let newArr = arr.flat(Infinity);
+
+function treeSumRecursion (arr){
     let sum = 0;
-    for (let i = 0; i < newArr.length; i++) {
-        sum += newArr[i];
+    for (let item of arr){
 
+        (typeof item === 'object') ? sum += treeSumRecursion(item):sum += item;
 
     }
-
-    return alert(sum)
+    return sum;
 
 }
 
-function treeSumloop(arr) {
-
-    let newArr = [];
-    let sum = 0;
-
-       for (const item of arr) {
-           if (Array.isArray(item) ){
-                for (const subItem of item){
-                    if (subItem === [] && subItem.length === 0){
-                        continue;
-
-                    }
-                    newArr.push(subItem);
-
-                }
-            }else  newArr.push(item);
+console.log(treeSumRecursion(arr));
 
 
-
-
-
-
-
-        }
-
-
-    for (let i=0; i< newArr.length;i++){
-        sum+=newArr[i];
-
-
-
-    }
-        alert(newArr);
-        /*alert(sum);*/
-}
-
-
-
-/*treeSum(arr);*/
-treeSumloop(arr);

@@ -28,6 +28,7 @@
 }
 .calc_cell input[type=button]:hover {
   background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
+  -webkit-background-image:radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
 }
 
 /*# sourceMappingURL=calc_style.css.map */
