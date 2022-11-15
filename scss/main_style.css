@@ -43,6 +43,9 @@ h2 {
   flex-flow: column;
   list-style: none;
 }
+.main_section .main_section_list li {
+  margin-bottom: 10px;
+}
 .main_section .main_section_list a {
   text-decoration: none;
   font-size: 25px;
@@ -50,21 +53,15 @@ h2 {
   color: black;
 }
 
-i{
-  color: lime;
-  font-size: 22px;
-
-
-
-}
-
-
 .add_section {
   margin-top: 50px;
 }
 
 .add_section_list {
   list-style: none;
+}
+.add_section_list li {
+  margin-bottom: 10px;
 }
 .add_section_list a {
   text-decoration: none;
