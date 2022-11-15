@@ -28,7 +28,17 @@
 }
 .calc_cell input[type=button]:hover {
   background-image: radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
-  -webkit-background-image:radial-gradient(ellipse farthest-corner at 50% 50%, #fdeaa8, #777);
+}
+
+@media all and (max-width: 500px) {
+  .calc_container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 5px solid darkred;
+  }
 }
 
 /*# sourceMappingURL=calc_style.css.map */
