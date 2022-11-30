@@ -4,27 +4,17 @@ const arr = [5, 7,
     1, 8];
 
 
-
 function treeSumRecursion (arr){
     let sum = 0;
     for (let item of arr){
 
-        (typeof item === 'object') ? sum += treeSumRecursion(item):sum += item;
+        (Array.isArray(arr)) ? sum += treeSumRecursion(item):sum += item;
 
     }
     return sum;
 
 }
-function treeSumRecursion2 (arr){
-    let sum = 0;
-    for (let item of arr){
 
-        (typeof item != 'object') ? sum += item :  sum += treeSumRecursion(item);
-
-    }
-    return sum;
-
-}
 console.log(treeSumRecursion(arr));
 console.log(treeSumRecursion2(arr))
 
