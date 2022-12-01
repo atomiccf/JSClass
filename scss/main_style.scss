@@ -13,8 +13,25 @@ body{
   font-family: 'Bona Nova', serif;
   font-size: 15px;
   background-color: aliceblue;
-
+  a{
+    color: black;
+  }
 }
+
+
+/* Стили Тёмной темы */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme a {
+  color: white;
+}
+body.dark-theme p {
+  color: white;
+  border-top: 1px solid white;
+}
+
 .container{
   width: 1200px;
   margin: 0 auto;
@@ -22,6 +39,20 @@ body{
 
 
 }
+
+.btn-toggle {
+
+  width: 190px;
+  height: 25px;
+  font-family: 'Bona Nova', serif;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+
+
 main{
   flex: 1 0 auto;
 
@@ -63,7 +94,7 @@ margin-bottom: 10px;
     text-decoration: none;
     font-size: 25px;
     font-family: 'Bona Nova', serif;
-    color: black;
+
 
 
   }
@@ -117,7 +148,6 @@ footer{
   flex: 1 0 auto;
 
 p{
-
   text-align: center;
 border-top: 1px solid black;
 
