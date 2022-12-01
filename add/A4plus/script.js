@@ -2,10 +2,7 @@ let str =prompt('Введите строку')
 function checkPalindromeRecursion () {
 
     let clean=str.toLowerCase()
-        .replaceAll('ё','е')
-        .replaceAll('ъ','ь')
-        .replaceAll(' ','')
-        .replaceAll(/\W+/g,'')
+        .replace(/[ёЁЪъЬь,./s]/gm,'')
 
         if (clean.length === 0 || clean.length === 1) {
 
