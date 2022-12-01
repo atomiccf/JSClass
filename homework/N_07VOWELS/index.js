@@ -7,10 +7,4 @@ function runCountVowels(){
 
 }
 
-function runCountVowelsEach(){
-    let message = prompt('Введите строку');
-    countVowelsSecond(message);
-    alert(`Количество гласных ${countVowelsSecond(message)}`)
 
-
-}
