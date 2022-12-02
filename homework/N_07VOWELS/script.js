@@ -4,8 +4,7 @@ function countVowels(message) {
 	let messageArr = message
 		.toLowerCase()
 		.split('');
-	console.log(messageArr)
-	let count = 0;
+		let count = 0;
 	for (let letter of messageArr){
 		if (vowels.includes(letter)){
 			++count;
