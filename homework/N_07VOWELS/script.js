@@ -8,18 +8,12 @@ function countVowels(message) {
 	for (let letter of messageArr){
 		if (vowels.includes(letter)){
 			++count;
-
-
 		}
 
 	}
 
-
-
-
 	 return `${count}`
 	 
-
 }
 
 
