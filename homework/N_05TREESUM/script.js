@@ -8,13 +8,15 @@ function treeSumRecursion (arr){
     let sum = 0;
     for (let item of arr){
 
-        (Array.isArray(arr)) ? sum += treeSumRecursion(item):sum += item;
+        (Array.isArray(item)) ? sum += treeSumRecursion(item):sum += item;
 
     }
     return sum;
 
 }
 
-console.log(treeSumRecursion(arr));
-console.log(treeSumRecursion2(arr))
+
+
+    console.log(treeSumRecursion(arr));
+
 
