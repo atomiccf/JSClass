@@ -35,7 +35,6 @@ function countVowelsForEach(message) {
 
         if (vowels.indexOf(item) !== -1) ++count
 
-
     })
     return count
 
