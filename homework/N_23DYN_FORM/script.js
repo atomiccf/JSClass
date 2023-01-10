@@ -22,6 +22,7 @@ const formDef2=[
 const body = document.querySelector('body');
 function add (def) {
     const form = document.createElement('form');
+    form.action = "https://fe.it-academy.by/TestForm.php"
     body.prepend(form);
     def.forEach ( elem => {
         const label = document.createElement('label');
