@@ -23,7 +23,7 @@ const body = document.querySelector('body');
 function add (def) {
     const form = document.createElement('form');
     form.action = "https://fe.it-academy.by/TestForm.php";
-    form.method = "POST";
+    form.method = "post";
     body.prepend(form);
     def.forEach ( elem => {
         const label = document.createElement('label');
@@ -60,7 +60,6 @@ function add (def) {
                 const radio = document.createElement('input');
                 const span = document.createElement('span');
                 radio.type='radio';
-                radio.name = elR.name;
                 span.textContent = elR.text;
                 radio.value = elR.value;
                 span.appendChild(radio);
@@ -81,9 +80,9 @@ function add (def) {
             label.appendChild(area);
         }
         if (elem.kind === "submit") {
-            input.textContent = elem.caption;
+            input.value = elem.caption;
             input.type=elem.kind;
-            form.appendChild( input);
+            form.appendChild(input);
         }
     });
 }
