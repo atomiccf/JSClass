@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formStyle.css">
+    <title>VALID_FORM</title>
+
+</head>
+<body>
+
+<form action="https://fe.it-academy.by/TestForm.php" method="post" id="siteForm" name="siteForm">
+    <fieldset>
+        <legend>Для внесения вашего сайта в каталог, заполните форму:</legend>
+
+       <div class="input_block">
+           <label for="dev">  Разработчики: </label>
+           <input type="text" name="dev" id="dev">
+           <div class="error_div"></div>
+       </div>
+        <div class="input_block">
+            <label for="title"> Название сайта: </label>
+            <input type="text" name="title" id="title">
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="url">  URL сайта: </label>
+            <input type="text" name="title" id="url">
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="date">  Дата запуска сайта: </label>
+            <input type="date" name="date" id="date">
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="count"> Посетителей в сутки: </label>
+            <input type="number" name="count" id="count">
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="mail"> E-mail для связи: </label>
+            <input type="text" name="mail" id="mail">
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="list"> Рубрика каталога: </label>
+            <select name="list" id="list">
+                <option></option>
+                <option>бытовая техника</option>
+                <option>домашний уют</option>
+                <option>здоровье</option>
+            </select>
+            <div class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label>   Размещение: </label>
+            <label for="free"></label>
+            <label for="pay"></label>
+            <label for="vip"></label>
+            <span><input type="radio" id="free" name="adv">бесплатное</span> <span><input type="radio"  id="pay" name="adv">платное</span>  <span><input type="radio"  id="vip" name="adv">VIP</span>
+            <div id='error_divRadio' class="error_div"></div>
+        </div>
+        <div class="input_block">
+                <label for="check"> Разрешить отзывы: </label>
+                <input type="checkbox" id="check"  name="check">
+            <div id='error_divCheck' class="error_div"></div>
+        </div>
+        <div class="input_block">
+            <label for="area"> Описание сайта: </label> <br>
+            <textarea id="area"></textarea>
+            <div class="error_div"></div>
+        </div>
+         <input type="submit" value="Опубликовать">
+    </fieldset>
+</form>
+
+
+<script src="script.js"> </script>
+<script src="events.js"> </script>
+</body>
+</html>
