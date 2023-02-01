@@ -2,6 +2,8 @@ let x = null;
 
 let y = null;
 
+let result = 0;
+
 let sign;
 
 function getNumber (num) {
@@ -29,12 +31,16 @@ sign = str;
 
 
 function getResult(){
+
+
 switch(sign){
 case '+':
-    document.getElementById("calc_output").innerHTML = x+y;
+    result = x+y
+    document.getElementById("calc_output").innerHTML = result;
     break;
 
 case '-':
+    result = x+y
     document.getElementById("calc_output").innerHTML = x-y;
     break;
 
