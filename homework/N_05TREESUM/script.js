@@ -15,7 +15,7 @@ function treeSumRecursion (arr){
 
 }
 
-
+111
 
     console.log(treeSumRecursion(arr));
 
